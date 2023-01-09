@@ -114,37 +114,35 @@ function getRandom() {
 }
 getRandom()
 
-// Function to generate password with user input
-let passwordGenerator = Math.floor(Math.random()*bigArray.length)
-let practicePassword = "";
-function generatePassword() {
-  for (let i = 0; i < passwordLength; i++) {
-    practicePassword += passwordGenerator
-}
-return practicePassword
-}
-console.log(generatePassword())
+//generate a random character from the passwordGenerator x times and store the result in a variable, then join those characters into one.
 
+// Function to generate password with user input
+let practicePassword = [];
+
+function generatePassword() {
+for (let i = 0; i < passwordLength; i++) {
+  let passwordGenerator = Math.floor(Math.random()*bigArray.length) //produces a random number from within the bigArray
+  let randomCharacter = bigArray[passwordGenerator] // produces the value at that random number
+  practicePassword += randomCharacter}
+
+  return practicePassword
+}
 
 // Get references to the #generate element
-var generateBtn = document.querySelector('#generate');
-
+let generateBtn = document.querySelector('#generate');
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector('#password');
-
-  passwordText.value = password; //taking an array of characters and turning it to a string (.join)
+  let password = generatePassword();
+  let passwordText = document.querySelector('#password'); //target the html element with id password
+  passwordText.value = password; //let the value of the html element with id password be equal to the function that generates a password.
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener('click', writePassword);
+generateBtn.addEventListener('click', writePassword); //when we click generate btn, let the write password function run to display the randomly generated password.
 
 
 
 //concat is good for combining arrays into one.
 //push is good for adding a character to the back of an array.
-//map is used in for loop.
-//create a new array that cancatenates what the user wants in their password. Then generate password with the characters they chose.
-// the password will change everytime they click generate password, but the characters will stay the same. 
+//map is used in for loops to specify what we want done to the elements of an array (add/subtract them etc).
