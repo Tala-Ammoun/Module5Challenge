@@ -114,8 +114,6 @@ function getRandom() {
 }
 getRandom()
 
-//generate a random character from the passwordGenerator x times and store the result in a variable, then join those characters into one.
-
 // Function to generate password with user input
 let practicePassword = [];
 
