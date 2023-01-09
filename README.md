@@ -17,9 +17,9 @@ https://tala-ammoun.github.io/Module5Challenge/
 
 
 You can access the link using the following steps:
-![alt text](Screenshot1.JPG)
+![alt text](assets/Screenshot1.JPG)
 
-![alt text](Screenshot2.JPG)
+![alt text](assets/Screenshot2.JPG)
 
 ## Credits
 
