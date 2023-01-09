@@ -15,6 +15,12 @@ To use code, you can review the javascript file above. To view the result of the
 You can find the link to the deployed live webpage here: 
 https://tala-ammoun.github.io/Module5Challenge/
 
+
+You can access the link using the following steps:
+![alt text](Screenshot1.JPG)
+
+![alt text](Screenshot2.JPG)
+
 ## Credits
 
 N/A 
