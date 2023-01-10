@@ -118,8 +118,9 @@ getRandom()
 let practicePassword = [];
 
 function generatePassword() {
+  let practicePassword = "";
 for (let i = 0; i < passwordLength; i++) {
-  let passwordGenerator = Math.floor(Math.random()*bigArray.length) //produces a random number from within the bigArray
+  passwordGenerator = Math.floor(Math.random()*bigArray.length) //produces a random number from within the bigArray
   let randomCharacter = bigArray[passwordGenerator] // produces the value at that random number
   practicePassword += randomCharacter}
 
@@ -127,19 +128,19 @@ for (let i = 0; i < passwordLength; i++) {
 }
 
 // Get references to the #generate element
-let generateBtn = document.querySelector('#generate');
+let generateBtn = document.querySelector('#generate'); //targets the "generate" button so that it responds to the "click"
 
 // Write password to the #password input
+let passwordText = document.querySelector('#password'); //target the html element with id password
+
+
 function writePassword() {
   let password = generatePassword();
-  let passwordText = document.querySelector('#password'); //target the html element with id password
-  passwordText.value = password; //let the value of the html element with id password be equal to the function that generates a password.
+  passwordText.value = password //let the value of the html element with id password be equal to the function that generates a password.
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener('click', writePassword); //when we click generate btn, let the write password function run to display the randomly generated password.
-
-
+generateBtn.addEventListener('click', writePassword)//when we click generate btn, let the write password function run to display the randomly generated password.
 
 //concat is good for combining arrays into one.
 //push is good for adding a character to the back of an array.
