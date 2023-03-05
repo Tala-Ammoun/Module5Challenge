@@ -90,7 +90,12 @@ let upperCasedCharacters = [
 
 let bigArray = [] 
 
-let passwordLength = prompt("Choose how long you would like your password to be from 10 to 64 characters.")
+
+let passwordLength = window.prompt("Choose how long you would like your password to be from 10 to 64 characters.")
+while (10 > passwordLength || passwordLength > 64 || passwordLength == null) {
+ alert("Please choose a password between 10 to 64 characters")
+ passwordLength = window.prompt("Choose how long you would like your password to be from 10 to 64 characters.")
+}
 
 // Function for getting a random element from an array
 function getRandom() {
@@ -123,7 +128,6 @@ for (let i = 0; i < passwordLength; i++) {
   passwordGenerator = Math.floor(Math.random()*bigArray.length) //produces a random number from within the bigArray
   let randomCharacter = bigArray[passwordGenerator] // produces the value at that random number
   practicePassword += randomCharacter}
-
   return practicePassword
 }
 
