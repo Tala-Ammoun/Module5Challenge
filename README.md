@@ -20,7 +20,6 @@ https://tala-ammoun.github.io/Random-Password-Generator/
 ![Initial window prompt.](assets/pic1.jpg)
 
 
-### Step 2
 ![Password Generated.](assets/pic2.jpg)
 
 ## Credits
